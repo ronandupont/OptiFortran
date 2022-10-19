@@ -40,7 +40,7 @@ module Hydrodynamique
 	ENDDO
 	
 	
-	!print*,"test",this%H
+	print*,"test",this%H
 	
   end subroutine run_H 
   

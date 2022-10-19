@@ -4,7 +4,7 @@ module Morphodynamique
   public :: Morpho
 
   type Morpho
-     real (kind = 8), dimension(:),allocatable :: psi,psi0
+     real (kind = 8), dimension(:),allocatable :: psi
   end type Morpho
   
 end module Morphodynamique

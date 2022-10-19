@@ -22,7 +22,7 @@ module HydroMorphodynamique
     class(HydroMorpho), intent(inout) :: this
 	integer                       :: i
 	
-	DO i=1,this%nbtimestep
+	DO i=0,this%nbtimestep
 		this%H1%current_time_step = i
 		this%H1%M1 = this%M1
 		CALL this%H1%run_H()

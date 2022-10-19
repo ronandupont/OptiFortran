@@ -56,7 +56,7 @@ ENDDO
 CALL create_forcing(time, loc, scal, Hmax, alpha,H00)
 
 ! Spatial initialisation 
-DO i=1,n_x
+DO i=0,n_x
 x(i) = i
 psi0(i) = x(i) * h0 / xshore
 mobility(i) = sandmobility
