@@ -24,23 +24,23 @@ module Hydrodynamique
 	integer                            :: i
 	real (kind = 8)                    :: H00,h0,gamma
 	
-	H00 = this%H00 (this%current_time_step)
-	print*,H00
-	psi= this%M1%psi
-	gamma = this%gamma
-	h0 = this%h0
+	! H00 = this%H00 (this%current_time_step)
+	! print*,H00
+	! psi= this%M1%psi
+	! gamma = this%gamma
+	! h0 = this%h0
 	
-	DO i= 1,this%D%xshore
-	  IF (H00/(H0-psi(i))>gamma) THEN
-	    this%H(i) = gamma * (H0-psi(i))
-	  ELSE
-	    this%H(i) = H00
-		!print*,"coucou"
-	  ENDIF
-	ENDDO
+	! DO i= 1,this%D%xshore
+	  ! IF (H00/(H0-psi(i))>gamma) THEN
+	    ! this%H(i) = gamma * (H0-psi(i))
+	  ! ELSE
+	    ! this%H(i) = H00
+		! !print*,"coucou"
+	  ! ENDIF
+	! ENDDO
 	
 	
-	print*,"test",this%H
+	!print*,"test",this%H
 	
   end subroutine run_H 
   

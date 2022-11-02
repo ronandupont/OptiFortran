@@ -68,7 +68,7 @@ HM1%H1%gamma = gamma
 HM1%H1%H00 = H00
 HM1%H1%H = H
 HM1%H1%H0 = H0
-HM1%nbtimestep = nbtimestep-1499
+HM1%nbtimestep = nbtimestep
 
 HM1%M1%psi0 = psi0
 HM1%M1%psi  = psi0
