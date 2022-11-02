@@ -33,11 +33,14 @@ module Hydrodynamique
 	DO i= 1,this%D%xshore
 	  IF (H00/(H0-psi(i))>gamma) THEN
 	    this%H(i) = gamma * (H0-psi(i))
+		print*,this%H(i)
 	  ELSE
 	    this%H(i) = H00
+		print*,this%H(i)
 		!print*,"coucou"
 	  ENDIF
 	ENDDO
+	
 	
 	
 	!print*,"test",this%H
